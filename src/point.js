@@ -1,4 +1,5 @@
 var name = "WindowName";
+
 function a() {
   var name = "Mike";
 

@@ -12,7 +12,9 @@ function isObjArr(val) {
 }
 
 isObjArr([1]);
-isObjArr({a: 1});
+isObjArr({
+  a: 1
+});
 isObjArr(null);
 
 /**
@@ -58,7 +60,7 @@ function sortRandom(arr) {
   });
 }
 
-console.log(sortRandom([1,2,3,4,5,'6',7,'8','a','b','z']));
+console.log(sortRandom([1, 2, 3, 4, 5, '6', 7, '8', 'a', 'b', 'z']));
 
 /**
  翻转字符串
@@ -91,8 +93,18 @@ function shallowCopy2(val) {
 }
 
 console.log(shallowCopy1(['old', 1, true, null]));
-console.log(shallowCopy1({a: 'old', b: 1, c: true, d: null}));
-console.log(shallowCopy2({a: 'old', b: 1, c: true, d: null}));
+console.log(shallowCopy1({
+  a: 'old',
+  b: 1,
+  c: true,
+  d: null
+}));
+console.log(shallowCopy2({
+  a: 'old',
+  b: 1,
+  c: true,
+  d: null
+}));
 
 /**
  数组和对象深拷贝
@@ -112,6 +124,16 @@ function deepCopy2(val) {
 }
 
 console.log(deepCopy1(['old', 1, true, null]));
-console.log(deepCopy1({a: 'old', b: 1, c: true, d: null}));
+console.log(deepCopy1({
+  a: 'old',
+  b: 1,
+  c: true,
+  d: null
+}));
 console.log(deepCopy2(['old', 1, true, null]));
-console.log(deepCopy2({a: 'old', b: 1, c: true, d: null}));
+console.log(deepCopy2({
+  a: 'old',
+  b: 1,
+  c: true,
+  d: null
+}));
